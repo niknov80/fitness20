@@ -1,21 +1,37 @@
 // Colors
 // ---------------------------------
 
-// Default
+// Text
 
-$color-default-black:               #000000;
-$color-default-white:               #ffffff;
-$color-transparent:                 rgba(255, 255, 255, 0);
+$color-text-base:                #102654;
+$color-text-white:               #ffffff;
+$color-text-accent:              #103aae;
+$color-text-gradient:            linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
 
-// Project palette
-// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+// Button
 
-$color-neon-blue:                   #2c39f2;
-$color-torch-red:                   #ff1553;
+$color-button-light: #ffffff;
+$color-button-dark: #102654;
+$color-button-gradient: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
 
-// Gradient
+// Background
 
-$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$color-bg-primary: #ffffff;
+$color-bg-secondary: #f8f9fc;
+$color-bg-banner: #ed0233;
+$color-bg-dark: #102654;
+$color-bg-gradient: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
+$color-bg-footer: #030a1a;
+
+// Icon
+
+$color-icon-light: #ffffff;
+$color-icon-dark: #102654;
+
+// Form
+
+$color-form-primary: #ffffff;
+$color-form-error: #ff121f;
 
 // Typography
 // ---------------------------------
@@ -44,12 +60,8 @@ $trans-600:                         0.6s $tf-default;
 // ---------------------------------
 
 $vp-320:                            320px;
-$vp-375:                            375px;
 $vp-768:                            768px;
-$vp-1024:                           1024px;
-$vp-1280:                           1280px;
-$vp-1440:                           1440px;
-$vp-1920:                           1920px;
+$vp-1200:                           1200px;
 
 // Retina
 // ---------------------------------
