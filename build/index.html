@@ -1,31 +1,99 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Фитнес центр в Омске">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preload" href="./fonts/alumnisans-semibold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/robotocondensed-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/robotocondensed-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/robotocondensed-bold.woff2" as="font" crossorigin="anonymous">
+  <title>Фитнес 2.0</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header">
+        <div class="container">
+          <a class="header__logo" href="#">
+            <picture>
+              <source media="(max-width: 767px)" srcset="./img/svg/logo-mobile.svg" width="67" height="13">
+              <source media="(max-width: 1199px)" srcset="./img/svg/logo-tablet.svg" width="81" height="16">
+              <img src="./img/svg/logo.svg" width="119" height="23" alt="Логотип фитнес центра Supergym">
+            </picture>
+          </a>
+          <a class="header__phone" href="tel:+88005555555">8-800-555-55-55</a>
+        </div>
       </header>
       <main>
-        <section class="intro">
+        <section class="hero">
           <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+            <div class="hero__wrapper">
+              <p>Омск</p>
+              <h1>Фитнес</br>центр</h1>
+              <ul>
+                <li>Тренажёрный зал</li>
+                <li>Групповые занятия</li>
+                <li>Кардио-зона</li>
+              </ul>
+              <a class="btn btn--light" href="#" >Купить абонемент</a>
+            </div>
+            <picture>
+              <source media="(max-width: 1199px)" srcset="./img/hero-tablet.jpg" width="324" height="390">
+              <img src="img/hero-desktop.jpg" width="500" height="556" alt="">
+            </picture>
           </div>
         </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer">
+        <div class="container">
+          <nav class="footer__nav">
+            <a class="footer__logo" href="#">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./img/svg/logo-mobile.svg" width="67" height="13">
+                <source media="(max-width: 1199px)" srcset="./img/svg/logo-tablet.svg" width="81" height="16">
+                <img src="./img/svg/footer-logo.svg" width="86" height="17" alt="Логотип фитнес центра Supergym">
+              </picture>
+            </a>
+            <ul class="site-nav">
+              <li>
+                <a href="#">Услуги</a>
+              </li>
+              <li>
+                <a href="#">Абонементы</a>
+              </li>
+              <li>
+                <a href="#">Акции</a>
+              </li>
+              <li>
+                <a href="#">Тренеры</a>
+              </li>
+              <li>
+                <a href="#">Расписание</a>
+              </li>
+            </ul>
+            <div class="social">
+              <a href="#" aria-label="Мы во ВКонтакте." target="_blank">
+                <svg  width="25" height="25" viewBox="0 0 25 25" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+              <a href="#" aria-label="Мы в Одноклассниках." target="_blank">
+                <svg  width="25" height="25" viewBox="0 0 25 25" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite.svg#icon-ok"></use>
+                </svg>
+              </a>
+              <a href="#" aria-label="Мы в Reddit." target="_blank">
+                <svg  width="25" height="25" viewBox="0 0 25 25" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite.svg#icon-reddit"></use>
+                </svg>
+              </a>
+            </div>
+          </nav>
+        </div>
       </footer>
     </div>
 

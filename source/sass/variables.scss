@@ -1,6 +1,12 @@
 // Colors
 // ---------------------------------
 
+// Default
+
+$color-default-white: #ffffff;
+$color-default-black: #000000;
+$color-transparent: rgba(255, 255, 255, 0);
+
 // Text
 
 $color-text-base:                #102654;
@@ -10,9 +16,9 @@ $color-text-gradient:            linear-gradient(129deg, #d10a42 0%, #0041ca 100
 
 // Button
 
-$color-button-light: #ffffff;
-$color-button-dark: #102654;
-$color-button-gradient: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+$color-button-border-light: #ffffff;
+$color-button-border-dark: #102654;
+$color-button-bg-gradient: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
 
 // Background
 
@@ -43,7 +49,8 @@ $fz-default:                        16px;
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
 
-$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+$ff-roboto:                    "RobotoCondensed", "Arial", sans-serif;
+$ff-alumnisans:                "Alumnisans", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------

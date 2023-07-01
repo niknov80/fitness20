@@ -1,0 +1,142 @@
+.hero {
+  background: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg, #003D85);
+}
+
+.hero .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  gap: 60px;
+
+  @include vp-1199 {
+    padding-top: 82px;
+    padding-bottom: 82px;
+    gap: 25px;
+    justify-content: center;
+  }
+
+  @include vp-767 {
+    padding-top: 20px;
+    padding-bottom: 90px;
+  }
+}
+
+.hero__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  grid-template-rows: repeat(3, min-content);
+  column-gap: 20px;
+  min-width: 395px;
+  align-items: start;
+  justify-content: end;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr min-content;
+    flex-grow: 1;
+    min-width: auto;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr 35px 1fr;
+    column-gap: 0;
+  }
+}
+
+.hero h1 {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color:  $color-text-white;
+  font-family: $ff-alumnisans;
+  font-size: 92px;
+  line-height: 110px;
+  font-weight: 600;
+  grid-column: 2 / 3;
+  text-align: right;
+  letter-spacing: 4.6px;
+
+  @include vp-1199 {
+    font-size: 72px;
+    line-height: 86px;
+    letter-spacing: 3.6px;
+    margin-bottom: 35px;
+  }
+
+  @include vp-767 {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+}
+
+.hero p {
+  margin-top: 110px;
+  margin-bottom: 15px;
+  color:  $color-text-white;
+  font-size: 48px;
+  line-height: 58px;
+  font-family: $ff-alumnisans;
+  font-weight: 600;
+  grid-column: 2 / 3;
+  text-align: right;
+
+  @include vp-1199 {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    font-size: 34px;
+    line-height: 41px;
+  }
+
+  @include vp-767 {
+    grid-column: 3 / 4;
+    margin-top: 80px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+.hero ul {
+  margin-top: 120px;
+  margin-bottom: 0;
+  padding-left: 0;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+
+  @include vp-1199 {
+    margin-top: 82px;
+  }
+
+  @include vp-767 {
+    grid-column: 1 / 3;
+    padding-right: 20px;
+    margin-top: 75px;
+  }
+}
+
+.hero li {
+  list-style-type: none;
+  color: $color-text-white;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: right;
+
+}
+.hero a {
+  grid-column: 2 / 3;
+  margin-bottom: auto;
+
+  @include vp-767 {
+    width: 100%;
+    grid-column: 1 / 4;
+  }
+}
+
+.hero picture {
+  @include vp-1199 {
+    flex-grow: 1;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+

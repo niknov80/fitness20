@@ -1,26 +1,44 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  padding: 24px 24px;
+  justify-content: center;
 
-  color: $color-default-white;
+  color: $color-text-base;
 
-  background-color: $color-neon-blue;
-  border: none;
+  background-color: $color-transparent;
+  border: 2px solid $color-button-border-dark;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+  text-transform: uppercase;
   cursor: pointer;
 
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
-  }
-
-  &:disabled {
+   &:disabled {
     opacity: 0.5;
 
     pointer-events: none;
   }
+}
+
+.btn--light {
+  color: $color-text-white;
+  border: 4px solid $color-button-border-light;
 
   @include hover-focus {
-    opacity: 0.8;
+    background-color: $color-bg-primary;
+    color: $color-text-accent;
+    outline: none;
+  }
+
+  //@include focus {
+  //  background-color: $color-bg-primary;
+  //  color: $color-text-accent;
+  //}
+
+  @include active {
+    color: $color-text-base;
   }
 }
