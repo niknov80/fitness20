@@ -2,7 +2,7 @@
   background: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg, #003D85);
 }
 
-.hero .container {
+.hero__wrapper {
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
@@ -21,7 +21,7 @@
   }
 }
 
-.hero__wrapper {
+.hero__block {
   display: grid;
   grid-template-columns: 1fr 250px;
   grid-template-rows: repeat(3, min-content);
@@ -43,21 +43,15 @@
 }
 
 .hero h1 {
+  @include title-1;
+
   margin-top: 0;
   margin-bottom: 50px;
   color:  $color-text-white;
-  font-family: $ff-alumnisans;
-  font-size: 92px;
-  line-height: 110px;
-  font-weight: 600;
   grid-column: 2 / 3;
   text-align: right;
-  letter-spacing: 4.6px;
 
   @include vp-1199 {
-    font-size: 72px;
-    line-height: 86px;
-    letter-spacing: 3.6px;
     margin-bottom: 35px;
   }
 
@@ -112,14 +106,13 @@
 }
 
 .hero li {
+  @include text-small;
+
   list-style-type: none;
   color: $color-text-white;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
   text-align: right;
-
 }
+
 .hero a {
   grid-column: 2 / 3;
   margin-bottom: auto;

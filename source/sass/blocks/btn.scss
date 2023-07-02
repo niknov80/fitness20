@@ -33,10 +33,6 @@
     outline: none;
   }
 
-  //@include focus {
-  //  background-color: $color-bg-primary;
-  //  color: $color-text-accent;
-  //}
 
   @include active {
     color: $color-text-base;

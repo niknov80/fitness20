@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
   <meta name="description" content="Фитнес центр в Омске">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/png" href="img/favicon.png">
@@ -14,119 +15,152 @@
   <title>Фитнес 2.0</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="container">
-          <a class="header__logo" href="#">
-            <picture>
-              <source media="(max-width: 767px)" srcset="./img/svg/logo-mobile.svg" width="67" height="13">
-              <source media="(max-width: 1199px)" srcset="./img/svg/logo-tablet.svg" width="81" height="16">
-              <img src="./img/svg/logo.svg" width="119" height="23" alt="Логотип фитнес центра Supergym">
-            </picture>
-          </a>
-          <a class="header__phone" href="tel:+88005555555">8-800-555-55-55</a>
+<body>
+<div class="wrapper">
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__logo" href="#">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./img/svg/logo-mobile.svg" width="67" height="13">
+            <source media="(max-width: 1199px)" srcset="./img/svg/logo-tablet.svg" width="81" height="16">
+            <img src="./img/svg/logo.svg" width="119" height="23" alt="Логотип фитнес центра Supergym">
+          </picture>
+        </a>
+        <a class="header__phone" href="tel:+88005555555">8-800-555-55-55</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__wrapper">
+          <div class="hero__block">
+            <p>Омск</p>
+            <h1>Фитнес центр</h1>
+            <ul>
+              <li>Тренажёрный зал</li>
+              <li>Групповые занятия</li>
+              <li>Кардио-зона</li>
+            </ul>
+            <a class="btn btn--light" href="#">Купить абонемент</a>
+          </div>
+          <picture>
+            <source media="(max-width: 1199px)" srcset="./img/hero-tablet.jpg" width="324" height="390">
+            <img src="img/hero-desktop.jpg" width="500" height="556" alt="">
+          </picture>
         </div>
-      </header>
-      <main>
-        <section class="hero">
-          <div class="container">
-            <div class="hero__wrapper">
-              <p>Омск</p>
-              <h1>Фитнес</br>центр</h1>
-              <ul>
-                <li>Тренажёрный зал</li>
-                <li>Групповые занятия</li>
-                <li>Кардио-зона</li>
-              </ul>
-              <a class="btn btn--light" href="#" >Купить абонемент</a>
-            </div>
+      </div>
+    </section>
+    <section class="gym">
+      <div class="container">
+        <div class="gym__wrapper">
+          <div class="gym__description">
+            <h2>Тренажерный зал</h2>
+            <strong>Просторный зал площадью 900&nbsp;кв/м</strong>
+            <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
+              и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех
+              спортсменов.</p>
+            <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес
+              центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          </div>
+          <div class="gym__picture">
             <picture>
-              <source media="(max-width: 1199px)" srcset="./img/hero-tablet.jpg" width="324" height="390">
-              <img src="img/hero-desktop.jpg" width="500" height="556" alt="">
+              <img width="660" height="401" src="./img/gym-desktop.jpg" alt="">
             </picture>
           </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="container">
-          <nav class="footer__nav">
-            <a class="footer__logo" href="#">
-              <picture>
-                <source media="(max-width: 767px)" srcset="./img/svg/logo-mobile.svg" width="67" height="13">
-                <source media="(max-width: 1199px)" srcset="./img/svg/logo-tablet.svg" width="81" height="16">
-                <img src="./img/svg/footer-logo.svg" width="86" height="17" alt="Логотип фитнес центра Supergym">
-              </picture>
-            </a>
-            <ul class="site-nav">
-              <li>
-                <a href="#">Услуги</a>
-              </li>
-              <li>
-                <a href="#">Абонементы</a>
-              </li>
-              <li>
-                <a href="#">Акции</a>
-              </li>
-              <li>
-                <a href="#">Тренеры</a>
-              </li>
-              <li>
-                <a href="#">Расписание</a>
-              </li>
-            </ul>
-            <div class="social">
-              <a href="#" aria-label="Мы во ВКонтакте." target="_blank">
-                <svg  width="25" height="25" viewBox="0 0 25 25" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite.svg#icon-vk"></use>
-                </svg>
+          <div class="gym__video video">
+            <div class="video__wrapper">
+              <a href="https://www.youtube.com/embed/9TZXsZItgdw">
+                <picture>
+                  <img src="img/gym-video-desktop.jpg" alt="">
+                </picture>
               </a>
-              <a href="#" aria-label="Мы в Одноклассниках." target="_blank">
-                <svg  width="25" height="25" viewBox="0 0 25 25" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite.svg#icon-ok"></use>
-                </svg>
-              </a>
-              <a href="#" aria-label="Мы в Reddit." target="_blank">
-                <svg  width="25" height="25" viewBox="0 0 25 25" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite.svg#icon-reddit"></use>
-                </svg>
-              </a>
+              <button type="button" aria-label="Запустить видео"></button>
             </div>
-          </nav>
-        </div>
-      </footer>
-    </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer__nav">
+        <a class="footer__logo" href="#">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./img/svg/logo-mobile.svg" width="67" height="13">
+            <source media="(max-width: 1199px)" srcset="./img/svg/logo-tablet.svg" width="81" height="16">
+            <img src="./img/svg/footer-logo.svg" width="86" height="17" alt="Логотип фитнес центра Supergym">
+          </picture>
+        </a>
+        <ul class="site-nav">
+          <li>
+            <a href="#">Услуги</a>
+          </li>
+          <li>
+            <a href="#">Абонементы</a>
+          </li>
+          <li>
+            <a href="#">Акции</a>
+          </li>
+          <li>
+            <a href="#">Тренеры</a>
+          </li>
+          <li>
+            <a href="#">Расписание</a>
+          </li>
+        </ul>
+        <div class="social">
+          <a href="#" aria-label="Мы во ВКонтакте." target="_blank">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+              <use href="img/sprite.svg#icon-vk"></use>
             </svg>
-          </button>
+          </a>
+          <a href="#" aria-label="Мы в Одноклассниках." target="_blank">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+              <use href="img/sprite.svg#icon-ok"></use>
+            </svg>
+          </a>
+          <a href="#" aria-label="Мы в Reddit." target="_blank">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+              <use href="img/sprite.svg#icon-reddit"></use>
+            </svg>
+          </a>
         </div>
-      </div>
+      </nav>
     </div>
+  </footer>
+</div>
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+<!-- Модалки -->
+<div class="modal modal--preload" data-modal="feedback">
+  <div class="modal__wrapper">
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__content">
+      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+        <svg width="15" height="15">
+          <use xlink:href="img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+  <div class="modal__wrapper">
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__content">
+      <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+        <svg width="15" height="15">
+          <use xlink:href="img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="js/vendor.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
 </html>

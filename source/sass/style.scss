@@ -14,6 +14,7 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/typography";
 
 // Blocks
 // ---------------------------------
@@ -25,6 +26,8 @@
 @import "blocks/custom-select";
 @import "blocks/header";
 @import "blocks/hero";
+@import "blocks/gym";
+@import "blocks/video";
 @import "blocks/footer";
 @import "blocks/site-nav";
 @import "blocks/social";
