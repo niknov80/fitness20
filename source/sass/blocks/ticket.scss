@@ -1,0 +1,31 @@
+.ticket {
+  position: relative;
+  background-color: $color-bg-secondary;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -80px;
+    right: -85px;
+    width: 322px;
+    height: 385px;
+    background-image: url("../img/weight-plates-desktop.png");
+    transform: rotate(-30deg);
+  }
+}
+
+.ticket__wrapper {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket__wrapper h2 {
+  @include title-2;
+
+  margin-top: 0;
+  margin-bottom: 25px;
+  align-self: center;
+}

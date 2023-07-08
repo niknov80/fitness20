@@ -1,0 +1,155 @@
+.events {
+  padding-top: 120px;
+  padding-bottom: 55px;
+
+  @include vp-1199 {
+    padding-top: 95px;
+    padding-bottom: 60px;
+  }
+}
+
+.events__wrapper {
+  background-color: $color-bg-banner;
+  display: grid;
+  grid-template-columns: 1fr 660px;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr 386px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.events__description {
+  padding: 85px 80px 90px;
+  display: grid;
+  grid-template-columns: 1fr 90px;
+  column-gap: 20px;
+
+  @include vp-1199 {
+    padding: 50px 45px 25px;
+    grid-template-columns: 1fr 60px;
+    align-items: start;
+    grid-template-rows: min-content;
+  }
+
+  @include vp-767 {
+    padding-bottom: 50px;
+  }
+}
+
+.events__description h3 {
+  font-size: 82px;
+  line-height: 78px;
+  letter-spacing: 2.46px;
+  font-weight: 600;
+  font-family: $ff-alumnisans;
+  color: $color-text-white;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 5px;
+
+  @include vp-1199 {
+    font-size: 48px;
+    line-height: 46px;
+    letter-spacing: 1.44px;
+  }
+}
+
+.events__description dl {
+  color: $color-text-white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.events__description dt {
+  margin: 0;
+  padding: 0 0 5px;
+  border-bottom: 1px solid $color-default-white;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 0;
+  }
+}
+
+.events__date {
+  display: flex;
+  gap: 7px;
+  padding: 0;
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 21px;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 5px;
+  }
+}
+
+.events__date span {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+
+  @include vp-1199 {
+    font-size: 24px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.events__time {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+
+  @include vp-1199 {
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+
+.events__description p {
+  @include text-large;
+  grid-column: 1 / 3;
+  color: $color-text-white;
+  margin-bottom: 0;
+  margin-top: 0;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 5px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 30px;
+  }
+}
+
+.events__description button {
+  grid-column: 1 / 3;
+  margin-top: auto;
+
+  @include vp-1199 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 0;
+    margin-bottom: auto;
+  }
+
+  @include vp-767 {
+    margin-bottom: 0;
+  }
+}

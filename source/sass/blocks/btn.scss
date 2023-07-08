@@ -1,6 +1,7 @@
 .btn {
   display: inline-flex;
-  padding: 24px 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   justify-content: center;
 
   color: $color-text-base;
@@ -33,8 +34,21 @@
     outline: none;
   }
 
-
   @include active {
     color: $color-text-base;
+  }
+}
+
+.btn--dark {
+  @include hover-focus {
+    background: $color-button-bg-gradient;
+    border: none;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    color: $color-text-white;
+  }
+
+  @include active {
+    color: rgba(255, 255, 255, 0.7);
   }
 }
