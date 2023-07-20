@@ -17,4 +17,17 @@
   border-radius: 50%;
   width: 25px;
   height: 25px;
+
+  @include hover-focus {
+    background-color: $color-text-accent;
+    color: $color-text-white;
+  }
+
+  @include active {
+    background-color: $color-text-base;
+  }
+}
+
+.social--disable a {
+  opacity: 0.3;
 }

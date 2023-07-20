@@ -1,0 +1,70 @@
+.form {
+  padding: 55px 170px 65px 103px;
+  background-color: $color-bg-dark;
+
+  @include vp-1199 {
+    padding: 60px 160px 60px 130px;
+  }
+
+  @include vp-767 {
+    padding: 65px 15px;
+  }
+}
+
+.form h2 {
+  @include text-alumnisans-54-85-800;
+  color: $color-text-white;
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  @include vp-1199 {
+    margin-bottom: 35px;
+  }
+}
+
+.form__wrapper form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 25px;
+
+  @include vp-1199 {
+    column-gap: 65px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+
+.form__wrapper input {
+  @include text-roboto-14-21-400;
+  color: $color-form-primary;
+  width: 100%;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  padding-bottom: 6px;
+  border-bottom: 1px solid $color-input-border;
+
+  &::placeholder {
+    color: $color-form-primary;
+  }
+}
+
+.form__wrapper .is-invalid input {
+  border-bottom: 1px solid $color-form-error;
+}
+
+
+.form__input .is-invalid {
+  @include text-roboto-14-21-400;
+  color: $color-form-error;
+}
+
+
+.form__wrapper button {
+  grid-column: 1 / 3;
+}

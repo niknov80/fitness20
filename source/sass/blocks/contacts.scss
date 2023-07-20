@@ -1,0 +1,85 @@
+.contacts {
+  padding: 55px 120px 40px;
+  border-top: 1px solid $color-input-border;
+
+  @include vp-1199 {
+    padding: 65px 130px 65px;
+  }
+
+  @include vp-767 {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 60px;
+  }
+}
+
+.contacts h2 {
+  @include text-alumnisans-54-65-600;
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  @include vp-1199 {
+    margin-bottom: 30px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 35px;
+  }
+}
+
+.contacts__wrapper {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-auto-rows: auto;
+  grid-auto-flow: column;
+  row-gap: 20px;
+  column-gap: 85px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include vp-1199 {
+    column-gap: 65px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  &::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: $color-input-border;
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+}
+
+.contacts__wrapper dd {
+  @include text-roboto-14-21-400;
+  margin-left: 0;
+
+  @include vp-1199 {
+    @include text-roboto-18-27-400;
+  }
+}
+
+.contacts__wrapper dt {
+  @include text-roboto-16-24-700;
+  margin-bottom: 0;
+
+  @include vp-1199 {
+    @include text-roboto-20-30-700;
+    margin-bottom: 5px;
+  }
+}

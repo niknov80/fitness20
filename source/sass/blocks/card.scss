@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20% 20%;
+  padding: 65px 70px;
   background-color: $color-bg-primary;
 
   @include vp-1199 {
@@ -13,7 +13,7 @@
 
   @include vp-767 {
     grid-column: 1 / 2;
-    padding: 55px 42px;
+    padding: 45px 42px;
   }
 
   @include hover-focus {
@@ -33,7 +33,7 @@
   }
 
   &::before {
-    @include text-number-big;
+    @include text-roboto-100-150-700;
     color: rgba(232, 232, 232, 0.5);
     content: attr(data-price);
     position: absolute;
@@ -44,26 +44,43 @@
 }
 
 .card h3 {
-  @include title-3;
+  @include text-roboto-26-28-700;
   margin-top: 0;
   margin-bottom: 10px;
+
+  @include vp-767 {
+    @include text-roboto-22-24-700;
+
+    margin-bottom: 5px;
+  }
 }
 
 .card strong {
-  @include text-number;
+  @include text-roboto-60-90-700;
+
   display: flex;
   align-items: center;
   gap: 14px;
   margin-top: 0;
   margin-bottom: 35px;
-  text-shadow: 3px 3px 0 0 gray;
   z-index: 1;
+
+  @include vp-767 {
+    @include text-roboto-48-72-700;
+    margin-bottom: 35px;
+    gap: 0;
+  }
 }
 
 .card p {
+  @include text-roboto-16-24-400;
   margin-top: 0;
-  margin-bottom: 72px;
+  margin-bottom: 70px;
   color: $color-text-secondary;
+
+  @include vp-767 {
+    margin-bottom: 55px;
+  }
 }
 
 .card button {

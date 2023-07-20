@@ -3,6 +3,8 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {findVideos} from './modules/video';
 import {initTabs} from './modules/tabs/init-tabs.js';
+import {initAccordions} from './modules/accordions/init-accordion.js';
+import {sliderInit} from './modules/slider.js';
 
 // ---------------------------------
 
@@ -12,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  sliderInit();
   // Modules
   // ---------------------------------
   findVideos();
@@ -19,9 +22,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
 
 
-
   window.addEventListener('load', () => {
     initTabs();
+    initAccordions();
     initModals();
     const form = new Form();
     window.form = form;
@@ -54,4 +57,3 @@ window.addEventListener('DOMContentLoaded', () => {
 // breakpointChecker();
 
 // используйте .closest(el)
-

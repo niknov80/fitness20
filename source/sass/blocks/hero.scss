@@ -1,10 +1,10 @@
 .hero {
-  background: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg, #003D85);
+  background: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 313.31deg, #003d85);
 }
 
 .hero__wrapper {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 52px;
   display: grid;
   grid-template-columns: 12% 22% 65px 1fr;
   grid-template-rows: 110px min-content min-content min-content 1fr;
@@ -25,13 +25,13 @@
   }
 }
 
-
 .hero h1 {
-  @include title-1;
+  @include text-alumnisans-92-110-600;
 
   margin-top: 15px;
   margin-bottom: 50px;
-  color:  $color-text-white;
+  color: $color-text-white;
+  -webkit-text-stroke: 2px $color-text-white;
 
   grid-column: 2 / 3;
   grid-row: 3 / 4;
@@ -53,14 +53,11 @@
 }
 
 .hero p {
+  @include text-alumnisans-48-58-600-caption;
   margin-top: 0;
   margin-bottom: 0;
-  margin-right: 55px;
-  color:  $color-text-white;
-  font-size: 48px;
-  line-height: 58px;
-  font-family: $ff-alumnisans;
-  font-weight: 600;
+  margin-right: 50px;
+  color: $color-text-white;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   text-align: right;
@@ -70,21 +67,16 @@
   @include vp-1199 {
     margin-right: 5px;
     margin-top: 0;
-    font-size: 34px;
-    line-height: 41px;
   }
 
   @include vp-767 {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    font-size: 28px;
-    line-height: 34px;
-
     align-self: start;
   }
 }
 
-.hero ul {
+.hero__list {
   margin-top: 135px;
   margin-bottom: 0;
   margin-right: 10px;
@@ -105,8 +97,8 @@
   }
 }
 
-.hero li {
-  @include text-small;
+.hero__list li {
+  @include text-roboto-14-21-400;
 
   list-style-type: none;
   color: $color-text-white;
@@ -116,16 +108,13 @@
 .hero a {
   grid-column: 2 / 3;
   grid-row: 4 / 5;
-  margin-bottom: auto;
   justify-self: end;
-  padding-left: 55px;
-  padding-right: 55px;
+  width: 230px;
 
   @include vp-1199 {
-    //grid-column: 2 / 4;
-    //grid-row: 4 / 5;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: auto;
   }
 
   @include vp-767 {
@@ -134,20 +123,10 @@
   }
 }
 
-.hero picture {
+.hero__img {
   grid-column: 4 / 5;
   grid-row: 1 / -1;
   padding: 0;
-
-  @include vp-1199 {
-  }
-
-  @include vp-767 {
-    display: none;
-  }
-}
-
-.hero img {
   width: 500px;
   height: 556px;
 
@@ -155,4 +134,14 @@
     width: 324px;
     height: 390px;
   }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }

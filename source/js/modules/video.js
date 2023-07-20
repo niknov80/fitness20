@@ -14,8 +14,6 @@ const setupVideo = (video) => {
 
   button.addEventListener('click', () => {
     let iframe = createIframe(mediaUrl);
-    // link.remove();
-    // button.remove();
     wrap.remove();
     video.appendChild(iframe);
   });
@@ -38,4 +36,3 @@ const generateURL = (url) => {
 
   return url + query;
 };
-

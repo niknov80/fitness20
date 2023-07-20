@@ -1,4 +1,6 @@
 .btn {
+  @include text-roboto-12-14-700;
+
   display: inline-flex;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -8,18 +10,12 @@
 
   background-color: $color-transparent;
   border: 2px solid $color-button-border-dark;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.6px;
-  font-weight: 700;
-  text-transform: uppercase;
   cursor: pointer;
 
   transition: opacity $trans-default;
 
-   &:disabled {
+  &:disabled {
     opacity: 0.5;
-
     pointer-events: none;
   }
 }
@@ -50,5 +46,98 @@
 
   @include active {
     color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.btn--tab {
+  text-transform: lowercase;
+  padding-bottom: 10px;
+}
+
+.btn--faq {
+  @include text-roboto-18-18-400;
+  padding-top: 16px;
+  padding-bottom: 18px;
+
+  @include vp-767 {
+    @include text-roboto-16-16-400;
+
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  @include hover-focus {
+    background: $color-button-bg-gradient;
+    border: none;
+    color: $color-text-white;
+  }
+
+  @include active {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.btn--accordion {
+  display: inline-flex;
+  position: relative;
+  justify-self: end;
+  align-self: start;
+  width: 42px;
+  height: 42px;
+  border: 1px solid $color-button-border-dark;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @include vp-767 {
+    width: 32px;
+    height: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @include hover-focus {
+    background-color: $color-button-border-dark;
+
+    &::before {
+      background-color: $color-button-border-light;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &::before {
+    content: "";
+    height: 1px;
+    width: 18px;
+    background-color: $color-button-border-dark;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 18px;
+    background-color: $color-button-border-dark;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
+.is-active > .btn--accordion {
+  background-color: $color-button-border-dark;
+
+  &::before {
+    background-color: $color-button-border-light;
+  }
+
+  &::after {
+    display: none;
   }
 }

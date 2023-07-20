@@ -1,22 +1,130 @@
-.trainers__slider {
+.trainers {
+  padding-top: 10px;
+  padding-bottom: 95px;
 
-
-
+  @include vp-767 {
+    margin-top: 0;
+    padding-top: 5px;
+    padding-bottom: 70px;
+  }
 }
 
+.trainers__slider-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  position: relative;
 
+  @include vp-1199 {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  @include vp-767 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.trainers__slider {
+  overflow: hidden;
+  display: flex;
+  max-width: 1920px;
+  width: 100%;
+  height: auto;
+}
 
 .trainers__wrapper {
-
-
+  box-sizing: content-box;
 }
 
 .trainers__slide {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
 }
 
 .trainers__item {
+  position: relative;
+}
+
+.trainers__overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  align-items: center;
+  justify-content: end;
+  padding-bottom: 20px;
+
+  @include hover-focus {
+    padding: 45px 35px 35px;
+    background-color: rgba(16, 38, 84, 0.89);
+    justify-content: start;
+
+    & h3 {
+      margin-bottom: 0;
+    }
+
+    & p {
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    & ul {
+      display: block;
+    }
+
+    & li {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.trainers__overlay h3 {
+  @include text-roboto-18-27-400;
+  color: $color-text-white;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.trainers__overlay p {
+  @include text-roboto-16-24-400;
+
+  display: none;
+  color: $color-text-white;
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+
+.trainers__overlay ul {
+  display: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 13px;
+}
+
+.trainers__overlay li {
+  @include text-roboto-14-21-400;
+
+  color: $color-text-white;
+}
+
+.trainers__img {
+  height: 294px;
   width: 260px;
+
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
+  }
 }
 
 .trainers__slide-description {
@@ -37,13 +145,14 @@
 .trainers__slide picture {
   margin: 0;
   padding: 0;
-
 }
 
 .trainers__slide img {
   margin: 0;
   padding: 0;
-
+  min-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .trainers__arrow {
@@ -53,8 +162,21 @@
   z-index: 1;
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   width: 56px;
   height: 56px;
+  cursor: pointer;
+  color: #afafaf;
+
+  @include hover-focus {
+    border: 1px solid $color-text-accent;
+    border-radius: 50%;
+  }
+
+  @include active {
+    background-color: $color-button-border-dark;
+    color: $color-text-white;
+  }
 
   &::after {
     position: absolute;
@@ -62,17 +184,35 @@
     left: 0;
     width: 100%;
     height: 100%;
-    border: 1px solid blue;
-    border-radius: 50%;
-    cursor: pointer;
   }
 
   &--prev {
-    left: 0;
+    left: -75px;
 
+    @include vp-1199 {
+      left: -20px;
+    }
   }
 
   &--next {
-    right: 0;
+    right: -75px;
+  }
+
+  @include vp-1199 {
+    right: -20px;
+  }
+}
+
+.trainers h2 {
+  @include text-alumnisans-54-65-600;
+
+  @include vp-1199 {
+    margin-top: 35px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    margin-top: 0;
   }
 }
