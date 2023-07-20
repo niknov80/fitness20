@@ -4732,6 +4732,13 @@ button,
   }
 }
 
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+  .ticket::after {
+    background-image: url("../img/weight-plates-tablet@2x.png");
+    background-size: contain;
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
@@ -5539,5 +5546,12 @@ button,
   .reviews__arrow:hover:not(.focus-visible) {
     border: 1px solid #102654;
     border-radius: 50%;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .ticket::after {
+    background-image: url("../img/weight-plates-desktop@2x.png");
+    background-size: contain;
   }
 }

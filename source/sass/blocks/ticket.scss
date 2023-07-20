@@ -13,12 +13,22 @@
     background-image: url("../img/weight-plates-desktop.png");
     transform: rotate(-30deg);
 
+    @include retina {
+      background-image: url("../img/weight-plates-desktop@2x.png");
+      background-size: contain;
+    }
+
     @include vp-1199 {
       bottom: -73px;
       right: -10px;
       width: 290px;
       height: 345px;
       background-image: url("../img/weight-plates-tablet.png");
+
+      @include retina {
+        background-image: url("../img/weight-plates-tablet@2x.png");
+        background-size: contain;
+      }
     }
 
     @include vp-767 {

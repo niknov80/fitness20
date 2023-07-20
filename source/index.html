@@ -4,7 +4,6 @@
   <meta charset="UTF-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
   <meta name="description" content="Фитнес центр в Омске">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/png" href="img/favicon.png">
@@ -45,8 +44,10 @@
           <a class="btn btn--light" href="#">Купить абонемент</a>
           <div class="hero__img">
             <picture>
-              <source media="(max-width: 1199px)" srcset="./img/hero-tablet.jpg" width="324" height="390">
-              <img src="img/hero-desktop.jpg" width="500" height="556" alt="">
+              <source media="(max-width: 1199px)" srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x" type="image/webp">
+              <source srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 1199px)" srcset="./img/hero-tablet.jpg 1x, ./img/hero-tablet@2x.jpg 2x" width="324" height="390">
+              <img src="img/hero-desktop.jpg" width="500" height="556" alt="Спортсмен в футболке супермена">
             </picture>
           </div>
         </div>
@@ -67,14 +68,16 @@
           </div>
           <div class="gym__picture">
             <picture>
-              <img width="660" height="401" src="./img/gym-desktop.jpg" alt="">
+              <source srcset="./img/gym-desktop.webp 1x, ./img/gym-desktop@2x.webp 2x" type="image/webp">
+              <img width="660" height="401" src="./img/gym-desktop.jpg" srcset="./img/gym-desktop@2x.jpg 2x" alt="Наш тренажерный зал">
             </picture>
           </div>
           <div class="gym__video video">
             <div class="video__wrapper">
               <a href="https://www.youtube.com/embed/9TZXsZItgdw">
                 <picture>
-                  <img src="img/gym-video-desktop.jpg" alt="">
+                  <source srcset="./img/gym-video-desktop.webp 1x, ./img/gym-video-desktop@2x.webp 2x" type="image/webp">
+                  <img src="img/gym-video-desktop.jpg" srcset="./img/gym-video-desktop@2x.jpg 2x" alt="Видео экскурсия по нашему залу">
                 </picture>
               </a>
               <button type="button" aria-label="Запустить видео"></button>
@@ -212,9 +215,12 @@
           </div>
           <div class="events__image">
             <picture>
-              <source media="(max-width: 767px)" srcset="./img/super-games-mobile.jpg" width="290" height="292">
-              <source media="(max-width: 1199px)" srcset="./img/super-games-tablet.jpg" width="386" height="292">
-              <img width="660" height="500" src="./img/super-games-desktop.jpg" alt="">
+              <source media="(max-width: 767px)" srcset="./img/super-games-mobile.webp 1x, ./img/super-games-mobile@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 1199px)" srcset="./img/super-games-tablet.webp 1x, ./img/super-games-tablet@2x.webp 2x" type="image/webp">
+              <source srcset="./img/super-games-desktop.webp 1x, ./img/super-games-desktop@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 767px)" srcset="./img/super-games-mobile.jpg 1x, ./img/super-games-mobile@2x.jpg 2x" width="290" height="292">
+              <source media="(max-width: 1199px)" srcset="./img/super-games-tablet.jpg 1x, ./img/super-games-tablet@2x.jpg 2x" width="386" height="292">
+              <img width="660" height="500" src="./img/super-games-desktop.jpg" srcset="./img/super-games-desktop@2x.jpg 2x" alt="Спортсмен по crossfit">
             </picture>
           </div>
         </div>
@@ -242,7 +248,8 @@
                   </div>
                   <div class="trainers__img">
                     <picture>
-                      <img src="./img/coach-1.jpg" alt="Фотография Анны">
+                      <source srcset="./img/coach-1.webp 1x, ./img/coach-1@2x.webp 2x" type="image/webp">
+                      <img src="./img/coach-1.jpg" srcset="./img/coach-1@2x.jpg" alt="Фотография Анны">
                     </picture>
                   </div>
                 </div>
@@ -260,7 +267,8 @@
                   </div>
                   <div class="trainers__img">
                     <picture>
-                      <img src="./img/coach-2.jpg" alt="Фотография Алексея">
+                      <source srcset="./img/coach-2.webp 1x, ./img/coach-2@2x.webp 2x" type="image/webp">
+                      <img src="./img/coach-2.jpg" srcset="./img/coach-2@2x.jpg" alt="Фотография Алексея">
                     </picture>
                   </div>
                 </div>
@@ -278,7 +286,8 @@
                   </div>
                   <div class="trainers__img">
                     <picture>
-                      <img src="./img/coach-3.jpg" alt="Фотография Александра">
+                      <source srcset="./img/coach-3.webp 1x, ./img/coach-3@2x.webp 2x" type="image/webp">
+                      <img src="./img/coach-3.jpg" srcset="./img/coach-3@2x.jpg" alt="Фотография Александра">
                     </picture>
                   </div>
                 </div>
@@ -296,8 +305,8 @@
                   </div>
                   <div class="trainers__img">
                     <picture>
-
-                      <img src="./img/coach-4.jpg" alt="Фотография Марии">
+                      <source srcset="./img/coach-4.webp 1x, ./img/coach-4@2x.webp 2x" type="image/webp">
+                      <img src="./img/coach-4.jpg" srcset="./img/coach-4@2x.jpg" alt="Фотография Марии">
                     </picture>
                   </div>
                 </div>
@@ -399,9 +408,12 @@
             </div>
             <div class="promo__img">
               <picture>
-                <source media="(max-width: 767px)" srcset="./img/promo-mobile.jpg" width="290" height="299">
-                <source media="(max-width: 1199px)" srcset="./img/promo-tablet.jpg" width="399" height="462">
-                <img src="./img/promo-desktop.jpg" alt="">
+                <source media="(max-width: 767px)" srcset="./img/promo-mobile.webp 1x, ./img/promo-mobile@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 1199px)" srcset="./img/promo-tablet.webp 1x, ./img/promo-tablet@2x.webp 2x" type="image/webp">
+                <source srcset="./img/promo-desktop.webp 1x, ./img/promo-desktop@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 767px)" srcset="./img/promo-mobile.jpg 1x, ./img/promo-mobile@2x.jpg 2x" width="290" height="299">
+                <source media="(max-width: 1199px)" srcset="./img/promo-tablet.jpg 1x, ./img/promo-tablet@2x.jpg 2x" width="399" height="462">
+                <img src="./img/promo-desktop.jpg" srcset="./img/promo-desktop@2x.jpg 2x" alt="Девушка спортивного телосложения">
               </picture>
 
             </div>
@@ -644,7 +656,10 @@
               <div class="swiper-slide reviews__slide">
                 <blockquote class="reviews__item">
                   <div class="reviews__img">
-                    <img src="./img/author-1.jpg" alt="">
+                    <picture>
+                      <source srcset="./img/author-1.webp 1x, ./img/author-1@2x.webp 2x" type="image/webp">
+                      <img src="./img/author-1.jpg" srcset="./img/author-1@2x.jpg 2x" alt="Автор отзыва">
+                    </picture>
                   </div>
                   <cite>Анна Орлова</cite>
                   <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
