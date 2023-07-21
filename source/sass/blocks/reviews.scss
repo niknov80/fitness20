@@ -12,7 +12,7 @@
 
   @include vp-767 {
     padding-top: 65px;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
   }
 }
 
@@ -64,7 +64,7 @@
     grid-template-columns: 1fr 1fr;
     padding: 40px 30px 20px;
     column-gap: 20px;
-    row-gap: 6px;
+    row-gap: 0;
   }
 }
 

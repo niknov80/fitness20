@@ -16,8 +16,9 @@
 .gym__wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding-left: 103px;
-  padding-right: 103px;
+  max-width: 1145px;
+  margin-left: auto;
+  margin-right: auto;
   column-gap: 40px;
   position: relative;
   padding-bottom: 115px;
@@ -45,7 +46,7 @@
   align-items: start;
   padding-top: 40px;
   padding-left: 60px;
-  padding-right: 45px;
+  padding-right: 40px;
 
   @include vp-1199 {
     align-items: center;
@@ -136,7 +137,7 @@
 .gym__video {
   position: absolute;
   bottom: 0;
-  left: 40%;
+  left: 38%;
   width: 364px;
   height: 228px;
 

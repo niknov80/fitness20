@@ -2,7 +2,7 @@
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 35px;
 
   @include vp-767 {
     gap: 35px;
@@ -44,18 +44,20 @@
 }
 
 .tabs__element {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 40px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
   width: 100%;
 
   @include vp-1199 {
-    grid-template-columns: repeat(6, 1fr);
+    flex-direction: column;
     row-gap: 40px;
   }
 
   @include vp-767 {
-    grid-template-columns: 1fr;
     row-gap: 50px;
   }
 }

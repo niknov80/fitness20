@@ -21,14 +21,19 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
   row-gap: 40px;
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include vp-1199 {
     column-gap: 30px;
     row-gap: 30px;
+    max-width: 678px;
   }
 
   @include vp-767 {
     grid-template-columns: 1fr;
+    max-width: 290px;
   }
 }
 
@@ -55,9 +60,9 @@
   @include text-alumnisans-54-65-600;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
-  @include vp-767 {
+  @include vp-1199 {
     margin-bottom: 40px;
   }
 }
@@ -114,7 +119,6 @@
     }
   }
 
-
   &::after {
     content: "";
     position: absolute;
@@ -159,6 +163,7 @@
 
   @include vp-767 {
     align-items: center;
+    padding-bottom: 25px;
   }
 }
 

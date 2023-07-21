@@ -2,7 +2,6 @@
   position: relative;
   background-color: $color-bg-secondary;
 
-
   &::after {
     content: "";
     position: absolute;
@@ -10,6 +9,7 @@
     right: -110px;
     width: 322px;
     height: 385px;
+    //background-color: $color-bg-banner;
     background-image: url("../img/weight-plates-desktop.png");
     transform: rotate(-30deg);
 
@@ -42,6 +42,9 @@
   padding-bottom: 120px;
   display: flex;
   flex-direction: column;
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include vp-1199 {
     padding-top: 100px;

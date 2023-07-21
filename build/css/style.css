@@ -2316,6 +2316,9 @@ button,
   -ms-grid-rows: 110px min-content min-content min-content 1fr;
   grid-template-rows: 110px -webkit-min-content -webkit-min-content -webkit-min-content 1fr;
   grid-template-rows: 110px min-content min-content min-content 1fr;
+  max-width: 1145px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero h1 {
@@ -2421,8 +2424,9 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[12];
   grid-template-columns: repeat(12, 1fr);
-  padding-left: 103px;
-  padding-right: 103px;
+  max-width: 1145px;
+  margin-left: auto;
+  margin-right: auto;
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   column-gap: 40px;
@@ -2446,7 +2450,7 @@ button,
   align-items: start;
   padding-top: 40px;
   padding-left: 60px;
-  padding-right: 45px;
+  padding-right: 40px;
 }
 
 .gym__wrapper h2 {
@@ -2489,7 +2493,7 @@ button,
 .gym__video {
   position: absolute;
   bottom: 0;
-  left: 40%;
+  left: 38%;
   width: 364px;
   height: 228px;
 }
@@ -2520,6 +2524,8 @@ button,
   width: 100%;
   height: 100%;
   border: none;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .video button {
@@ -2586,6 +2592,9 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ticket__wrapper h2 {
@@ -2718,7 +2727,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 40px;
+  gap: 35px;
 }
 
 .tabs__controls {
@@ -2769,13 +2778,18 @@ button,
 }
 
 .tabs__element {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
-  -webkit-column-gap: 40px;
-  -moz-column-gap: 40px;
-  column-gap: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -2847,6 +2861,7 @@ button,
   align-items: center;
   padding: 65px 70px;
   background-color: #ffffff;
+  width: 360px;
 }
 
 .card.focus-visible:focus::after {
@@ -2934,17 +2949,26 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 660px;
   grid-template-columns: 1fr 660px;
+  max-width: 1145px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .events__description {
-  padding: 85px 80px 90px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 85px 15px 90px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 90px;
   grid-template-columns: 1fr 90px;
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
+  -webkit-column-gap: 5px;
+  -moz-column-gap: 5px;
+  column-gap: 5px;
+  max-width: 360px;
+  min-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .events__description h3 {
@@ -3255,11 +3279,12 @@ button,
   line-height: 65px;
   font-weight: 600;
   letter-spacing: 1.62px;
+  margin-bottom: 50px;
 }
 
 .benefits {
   background-color: #f8f9fc;
-  padding-top: 70px;
+  padding-top: 75px;
   padding-bottom: 125px;
 }
 
@@ -3275,8 +3300,9 @@ button,
 }
 
 .benefits__wrapper {
-  padding-left: 160px;
-  padding-right: 160px;
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .benefits__list {
@@ -3505,6 +3531,9 @@ button,
   -moz-column-gap: 40px;
   column-gap: 40px;
   row-gap: 40px;
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .promo__item {
@@ -3532,7 +3561,7 @@ button,
   letter-spacing: 1.62px;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .promo__item h3 {
@@ -4204,14 +4233,15 @@ button,
   }
 
   .hero__wrapper {
-    -ms-grid-columns: 17% 31% 30px 1fr;
-    grid-template-columns: 17% 31% 30px 1fr;
+    -ms-grid-columns: 17% 32% 30px 1fr;
+    grid-template-columns: 17% 32% 30px 1fr;
     -ms-grid-rows: 50px -webkit-min-content -webkit-min-content -webkit-min-content 1fr;
     -ms-grid-rows: 50px min-content min-content min-content 1fr;
     grid-template-rows: 50px -webkit-min-content -webkit-min-content -webkit-min-content 1fr;
     grid-template-rows: 50px min-content min-content min-content 1fr;
     padding-top: 82px;
     padding-bottom: 82px;
+    max-width: 700px;
   }
 
   .hero h1 {
@@ -4361,8 +4391,10 @@ button,
   }
 
   .tabs__element {
-    -ms-grid-columns: (1fr)[6];
-    grid-template-columns: repeat(6, 1fr);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     row-gap: 40px;
   }
 
@@ -4371,16 +4403,18 @@ button,
     -ms-grid-column-span: 4;
     grid-column: 2/6;
     padding: 68px 118px;
+    width: 442px;
   }
 
   .events {
-    padding-top: 95px;
+    padding-top: 100px;
     padding-bottom: 60px;
   }
 
   .events__wrapper {
     -ms-grid-columns: 1fr 386px;
     grid-template-columns: 1fr 386px;
+    max-width: 678px;
   }
 
   .events__description {
@@ -4466,7 +4500,7 @@ button,
 
   .trainers h2 {
     margin-top: 35px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     text-align: center;
   }
 
@@ -4575,12 +4609,17 @@ button,
     -moz-column-gap: 30px;
     column-gap: 30px;
     row-gap: 30px;
+    max-width: 678px;
   }
 
   .promo h2 {
     font-size: 42px;
     line-height: 50px;
     letter-spacing: 1.26px;
+  }
+
+  .promo h2 {
+    margin-bottom: 40px;
   }
 
   .promo__item p {
@@ -4787,6 +4826,9 @@ button,
   }
 
   .hero__wrapper {
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto;
@@ -4956,8 +4998,6 @@ button,
   }
 
   .tabs__element {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
     row-gap: 50px;
   }
 
@@ -4966,6 +5006,7 @@ button,
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     padding: 45px 42px;
+    width: 290px;
   }
 
   .card h3 {
@@ -4992,6 +5033,7 @@ button,
   }
 
   .events__wrapper {
+    max-width: 290px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
@@ -5010,6 +5052,10 @@ button,
 
   .events__description button {
     margin-bottom: 0;
+  }
+
+  .events__image {
+    width: 290px;
   }
 
   .trainers {
@@ -5036,6 +5082,7 @@ button,
 
   .trainers h2 {
     margin-top: 0;
+    margin-bottom: 40px;
   }
 
   .benefits {
@@ -5069,6 +5116,18 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+  .benefits__list li:nth-last-of-type(1) {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  .benefits__list li:nth-last-of-type(2) {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
 
   .benefits__item {
@@ -5129,6 +5188,7 @@ button,
   .promo__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    max-width: 290px;
   }
 
   .promo__item {
@@ -5143,10 +5203,6 @@ button,
     font-size: 32px;
     line-height: 38px;
     letter-spacing: 0.96px;
-  }
-
-  .promo h2 {
-    margin-bottom: 40px;
   }
 
   .promo__item p {
@@ -5177,6 +5233,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    padding-bottom: 25px;
   }
 
   .promo__img {
@@ -5260,7 +5317,7 @@ button,
 
   .reviews {
     padding-top: 65px;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
   }
 
   .reviews h2 {
@@ -5281,7 +5338,7 @@ button,
     -webkit-column-gap: 20px;
     -moz-column-gap: 20px;
     column-gap: 20px;
-    row-gap: 6px;
+    row-gap: 0;
   }
 
   .reviews__img {

@@ -5,15 +5,18 @@
   align-items: center;
   padding: 65px 70px;
   background-color: $color-bg-primary;
+  width: 360px;
 
   @include vp-1199 {
     grid-column: 2 / 6;
     padding: 68px 118px;
+    width: 442px;
   }
 
   @include vp-767 {
     grid-column: 1 / 2;
     padding: 45px 42px;
+    width: 290px;
   }
 
   @include hover-focus {

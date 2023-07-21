@@ -8,16 +8,22 @@
   display: grid;
   grid-template-columns: 12% 22% 65px 1fr;
   grid-template-rows: 110px min-content min-content min-content 1fr;
-
+  max-width: 1145px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include vp-1199 {
-    grid-template-columns: 17% 31% 30px 1fr;
+    grid-template-columns: 17% 32% 30px 1fr;
     grid-template-rows: 50px min-content min-content min-content 1fr;
     padding-top: 82px;
     padding-bottom: 82px;
+    max-width: 700px;
   }
 
   @include vp-767 {
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     padding-top: 110px;
