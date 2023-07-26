@@ -1,7 +1,7 @@
 export const sliderInit = () => {
   const swiper = new Swiper('.trainers__slider', {
     direction: 'horizontal',
-    loop: false,
+    loop: true,
     slidesPerView: 1,
     slidesPerGroup: 1,
 
