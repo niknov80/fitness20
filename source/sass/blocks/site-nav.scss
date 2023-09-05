@@ -20,8 +20,9 @@
 }
 
 .site-nav a {
-  display: block;
   @include text-roboto-14-16-400;
+
+  display: block;
   color: $color-text-white;
   text-decoration: none;
   position: relative;
@@ -50,13 +51,13 @@
 
   @include hover {
     &::after {
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid $color-button-border-light;
     }
   }
 
   @include focus {
     &::before {
-      border: 1px solid white;
+      border: 1px solid $color-button-border-light;
     }
   }
 

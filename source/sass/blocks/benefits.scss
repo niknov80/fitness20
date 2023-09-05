@@ -136,9 +136,11 @@
   }
 
   &--bottom {
+    align-items: end;
     align-self: end;
 
     @include vp-767 {
+      align-items: center;
       align-self: center;
     }
   }
@@ -147,12 +149,13 @@
 .benefits__item h3 {
   @include text-roboto-22-33-700;
   grid-column: 2 / 3;
-  margin-top: 4px;
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 6px;
 
   @include vp-1199 {
     @include text-roboto-20-20-700;
     margin-top: 0;
+    margin-bottom: 10px;
   }
 
   @include vp-767 {
@@ -206,14 +209,6 @@
   @include text-roboto-16-18-300;
 }
 
-.benefits__item--bottom {
-  align-items: end;
-
-  @include vp-767 {
-    align-items: center;
-  }
-}
-
 .benefits__item--bottom h3 {
   margin-top: 0;
   margin-bottom: 5px;
@@ -238,12 +233,6 @@
   @include vp-767 {
     margin-top: 3px;
   }
-}
-
-.benefits__unit--accent p {
-  @include text-roboto-14-21-400;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .benefits__item--accent {
@@ -303,6 +292,16 @@
   margin-top: auto;
 }
 
+.benefits__unit--accent p {
+  @include text-roboto-26-28-700;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include vp-1199 {
+    @include text-roboto-22-24-700;
+  }
+}
+
 .benefits__number--accent p {
   @include text-roboto-74-90-700;
   background-image: none;
@@ -315,14 +314,6 @@
 
   @include vp-767 {
     @include text-roboto-74-74-700;
-  }
-}
-
-.benefits__unit--accent p {
-  @include text-roboto-26-28-700;
-
-  @include vp-1199 {
-    @include text-roboto-22-33-700;
   }
 }
 
