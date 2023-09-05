@@ -43,16 +43,20 @@
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 25px;
+  padding: 25px 25px 15px;
 
   border: 7px solid;
   border-image-source: $color-button-bg-gradient;
   border-image-slice: 1;
 
+  @include vp-1199 {
+    padding: 25px 25px 20px;
+  }
+
   @include vp-767 {
     align-items: center;
     padding-top: 35px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
 }
 
@@ -60,7 +64,7 @@
   @include text-alumnisans-54-65-600;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 
   @include vp-1199 {
     margin-bottom: 40px;
@@ -79,11 +83,11 @@
   margin-bottom: 0;
 
   @include vp-1199 {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
 
   @include vp-767 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
   }
 }
@@ -94,6 +98,8 @@
   position: relative;
   align-self: start;
   margin-top: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   @include vp-767 {
     align-self: center;
@@ -123,10 +129,8 @@
     content: "";
     position: absolute;
     display: block;
-    top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     border-bottom: 1px solid $color-text-base;
   }
 }
@@ -159,11 +163,11 @@
   background-color: $color-bg-banner;
   color: $color-text-white;
 
-  padding: 44px;
+  padding: 44px 44px 35px;
 
   @include vp-767 {
     align-items: center;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
   }
 }
 
@@ -206,7 +210,7 @@
 
   @include vp-767 {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }
 
@@ -259,7 +263,13 @@
     height: 1px;
     border: none;
     background-color: $color-text-white;
+
+    @include vp-1199 {
+      top: 25px;
+    }
   }
+
+
 }
 
 .promo__item--disabled a {

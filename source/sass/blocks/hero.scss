@@ -13,7 +13,7 @@
   margin-right: auto;
 
   @include vp-1199 {
-    grid-template-columns: 17% 32% 30px 1fr;
+    grid-template-columns: 17% 31% 29px 1fr;
     grid-template-rows: 50px min-content min-content min-content 1fr;
     padding-top: 82px;
     padding-bottom: 82px;
@@ -53,7 +53,7 @@
     grid-row: 2 / 3;
     width: min-content;
     justify-self: end;
-    margin-top: 15px;
+    margin-top: 13px;
     margin-bottom: 20px;
   }
 }

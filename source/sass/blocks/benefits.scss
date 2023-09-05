@@ -4,7 +4,8 @@
   padding-bottom: 125px;
 
   @include vp-1199 {
-    padding-bottom: 100px;
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
 
   @include vp-767 {
@@ -15,12 +16,12 @@
 
 .benefits h2 {
   @include text-alumnisans-54-65-600;
-  margin-top: 45px;
+  margin-top: 33px;
   margin-bottom: 50px;
   text-align: center;
 
   @include vp-1199 {
-    margin-top: 25px;
+    margin-top: 0;
     margin-bottom: 50px;
   }
 
@@ -59,29 +60,14 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content  min-content min-content;
     column-gap: 30px;
-    row-gap: 45px;
+    row-gap: 40px;
   }
 
   @include vp-767 {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  & li:nth-last-of-type(1) {
-    align-self: end;
-
-    @include vp-767 {
-      align-self: center;
-    }
-  }
-
-  & li:nth-last-of-type(2) {
-    align-self: end;
-
-    @include vp-767 {
-      align-self: center;
-    }
+    row-gap: 43px;
   }
 
   &::before {
@@ -116,7 +102,7 @@
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-template-rows: min-content min-content;
-  column-gap: 35px;
+  column-gap: 30px;
   align-items: start;
 
   @include vp-1199 {
@@ -129,15 +115,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 45px;
+    padding-left: 47px;
     padding-right: 45px;
   }
 
   &--left {
-    margin-left: 15px;
+    margin-left: 20px;
 
     @include vp-1199 {
       margin-left: 0;
+    }
+  }
+
+  &--right {
+    margin-left: 5px;
+
+    @include vp-1199 {
+      margin-left: 0;
+    }
+  }
+
+  &--bottom {
+    align-self: end;
+
+    @include vp-767 {
+      align-self: center;
     }
   }
 }
@@ -145,11 +147,12 @@
 .benefits__item h3 {
   @include text-roboto-22-33-700;
   grid-column: 2 / 3;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 4px;
+  margin-bottom: 10px;
 
   @include vp-1199 {
     @include text-roboto-20-20-700;
+    margin-top: 0;
   }
 
   @include vp-767 {
@@ -165,6 +168,7 @@
 
   @include vp-767 {
     text-align: center;
+    margin-top: 2px;
   }
 }
 
@@ -183,22 +187,63 @@
 }
 
 .benefits__number p {
-  @include text-roboto-70-65-700;
+  @include text-roboto-70-55-700;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 8px;
   background-image: $color-text-gradient;
   background-clip: text;
 
   @include vp-1199 {
     @include text-roboto-58-45-700;
   }
+
+  @include vp-767 {
+    margin-bottom: 0;
+  }
 }
 
 .benefits__unit p {
+  @include text-roboto-16-18-300;
+}
+
+.benefits__item--bottom {
+  align-items: end;
+
+  @include vp-767 {
+    align-items: center;
+  }
+}
+
+.benefits__item--bottom h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+
+  @include vp-1199 {
+    margin-top: 3px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 0;
+  }
+}
+
+.benefits__item--bottom p {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include vp-1199 {
+    margin-top: 5px;
+  }
+
+  @include vp-767 {
+    margin-top: 3px;
+  }
+}
+
+.benefits__unit--accent p {
   @include text-roboto-14-21-400;
   margin-top: 0;
   margin-bottom: 0;
-  text-align: center;
 }
 
 .benefits__item--accent {
@@ -211,7 +256,7 @@
   align-items: center;
   text-align: center;
   margin-top: 5px;
-  padding: 45px 30px 60px;
+  padding: 45px 30px 58px;
   color: $color-text-white;
   border-bottom: none;
 
@@ -221,7 +266,7 @@
     margin-left: 120px;
     margin-right: 120px;
     margin-top: 0;
-    padding: 25px 115px 35px;
+    padding: 25px 115px 40px;
   }
 
   @include vp-767 {
@@ -285,11 +330,17 @@
   margin-bottom: 40px;
 
   @include vp-1199 {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   @include vp-767 {
     gap: 0;
     margin-bottom: 10px;
+  }
+}
+
+.benefits__item--bottom .benefits__value {
+  @include vp-767 {
+    margin-bottom: 8px;
   }
 }

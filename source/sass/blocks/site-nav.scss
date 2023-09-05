@@ -1,12 +1,12 @@
 .site-nav {
   display: flex;
-  padding-left: 0;
+  padding-left: 10px;
   margin-top: 0;
   margin-bottom: 0;
-  gap: 40px;
+  gap: 20px;
 
   @include vp-1199 {
-    gap: 30px;
+    gap: 10px;
   }
 
   @include vp-767 {
@@ -20,34 +20,56 @@
 }
 
 .site-nav a {
+  display: block;
   @include text-roboto-14-16-400;
   color: $color-text-white;
   text-decoration: none;
   position: relative;
+  padding: 5px 10px;
+  outline: none;
 
-  @include vp-767 {
-    @include text-roboto-16-18-400;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 100%;
+    width: calc(100% - 20px);
   }
 
   @include hover {
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      height: 1px;
-      width: 100%;
-      background-color: $color-bg-primary;
+    &::after {
+      border-bottom: 1px solid white;
     }
   }
 
   @include focus {
-    outline: 1px solid $color-bg-primary;
-    padding: 5px 10px;
+    &::before {
+      border: 1px solid white;
+    }
   }
 
   @include active {
-    outline: none;
+    &::before,
+    &::after {
+      border: none;
+    }
+  }
+
+  @include vp-767 {
+    @include text-roboto-16-18-400;
+    padding: 5px 0;
   }
 }
 

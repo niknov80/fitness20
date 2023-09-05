@@ -68,7 +68,11 @@
           </div>
           <div class="gym__picture">
             <picture>
+              <source media="(max-width: 767px)" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 1199px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x" type="image/webp">
               <source srcset="./img/gym-desktop.webp 1x, ./img/gym-desktop@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 767px)" srcset="./img/gym-mobile.jpg 1x, ./img/gym-mobile@2x.jpg 2x" width="320" height="313">
+              <source media="(max-width: 1199px)" srcset="./img/gym-tablet.jpg 1x, ./img/gym-tablet@2x.jpg 2x" width="678" height="345">
               <img width="660" height="401" src="./img/gym-desktop.jpg" srcset="./img/gym-desktop@2x.jpg 2x" alt="Наш тренажерный зал">
             </picture>
           </div>
@@ -76,7 +80,9 @@
             <div class="video__wrapper">
               <a href="https://www.youtube.com/embed/9TZXsZItgdw">
                 <picture>
+                  <source media="(max-width: 767px)" srcset="img/gym-video-mobile.webp 1x, img/gym-video-mobile@2x.webp 2x" type="image/webp">
                   <source srcset="./img/gym-video-desktop.webp 1x, ./img/gym-video-desktop@2x.webp 2x" type="image/webp">
+                  <source media="(max-width: 767px)" srcset="./img/gym-video-mobile.jpg 1x, ./img/gym-video-mobile@2x.jpg 2x" width="320" height="167">
                   <img src="img/gym-video-desktop.jpg" srcset="./img/gym-video-desktop@2x.jpg 2x" alt="Видео экскурсия по нашему залу">
                 </picture>
               </a>
@@ -368,7 +374,7 @@
             </div>
             <p>Современные тренажеры на&nbsp;все группы мышц</p>
           </li>
-          <li class="benefits__item benefits__item--left">
+          <li class="benefits__item benefits__item--left benefits__item--bottom">
             <h3>Комфорт</h3>
             <div class="benefits__value">
               <div class="benefits__number">
@@ -380,7 +386,7 @@
             </div>
             <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
           </li>
-          <li class="benefits__item benefits__item--right">
+          <li class="benefits__item benefits__item--right benefits__item--bottom">
             <h3>Тренерский опыт</h3>
             <div class="benefits__value">
               <div class="benefits__number">
@@ -666,6 +672,19 @@
                     обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                 </blockquote>
               </div>
+              <div class="swiper-slide reviews__slide">
+                <blockquote class="reviews__item">
+                  <div class="reviews__img">
+                    <picture>
+                      <source srcset="./img/author-1.webp 1x, ./img/author-1@2x.webp 2x" type="image/webp">
+                      <img src="./img/author-1.jpg" srcset="./img/author-1@2x.jpg 2x" alt="Автор отзыва">
+                    </picture>
+                  </div>
+                  <cite>Анна Орлова</cite>
+                  <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                    обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                </blockquote>
+              </div>
             </div>
           </div>
 
@@ -686,43 +705,47 @@
 
     <div class="block-wrapper">
       <section class="form">
-        <h2>Бесплатное занятие</h2>
-        <div class="form__wrapper" data-callback="base" data-form-validate="data-form-validate">
-          <form action="https://echo.htmlacademy.ru/" method="post">
-            <div class="form__input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
-              <label for="name">
-                <input id="name" name="name" type="text" placeholder="Имя">
-              </label>
-            </div>
-            <div class="form__input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="data-required">
-              <label for="phone">
-                <input id="phone" name="phone" type="text" placeholder="Телефон">
-              </label>
-            </div>
-            <button class="btn btn--light" type="submit">Отправить</button>
-          </form>
+        <div class="form__container">
+          <h2>Бесплатное занятие</h2>
+          <div class="form__wrapper" data-callback="base" data-form-validate="data-form-validate">
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <div class="form__input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+                <label for="name">
+                  <input id="name" name="name" type="text" placeholder="Имя">
+                </label>
+              </div>
+              <div class="form__input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="data-required">
+                <label for="phone">
+                  <input id="phone" name="phone" type="text" placeholder="Телефон">
+                </label>
+              </div>
+              <button class="btn btn--light" type="submit">Отправить</button>
+            </form>
+          </div>
         </div>
       </section>
       <section class="contacts">
-        <h2>Контакты</h2>
-        <dl class="contacts__wrapper">
-          <div>
-            <dt>Адрес</dt>
-            <dd>г. Омск, ул. 60 лет Октября, 7</dd>
-          </div>
-          <div>
-            <dt>График работы:</dt>
-            <dd>Пн-Вс: с 8:00 до 22:00</dd>
-          </div>
-          <div>
-            <dt>Телефон:</dt>
-            <dd><a href="tel:88005555555">8-800-555-55-55</a></dd>
-          </div>
-          <div>
-            <dt>Email:</dt>
-            <dd><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></dd>
-          </div>
-        </dl>
+        <div class="contacts__container">
+          <h2>Контакты</h2>
+          <dl class="contacts__wrapper">
+            <div>
+              <dt>Адрес</dt>
+              <dd>г. Омск, ул. 60 лет Октября, 7</dd>
+            </div>
+            <div>
+              <dt>График работы:</dt>
+              <dd>Пн-Вс: с 8:00 до 22:00</dd>
+            </div>
+            <div>
+              <dt>Телефон:</dt>
+              <dd><a href="tel:88005555555">8-800-555-55-55</a></dd>
+            </div>
+            <div>
+              <dt>Email:</dt>
+              <dd><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></dd>
+            </div>
+          </dl>
+        </div>
       </section>
     </div>
   </main>

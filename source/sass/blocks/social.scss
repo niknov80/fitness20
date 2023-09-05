@@ -1,10 +1,6 @@
 .social {
   display: flex;
   gap: 10px;
-
-  @include vp-767 {
-    margin-top: 10px;
-  }
 }
 
 .social a {
@@ -21,10 +17,16 @@
   @include hover-focus {
     background-color: $color-text-accent;
     color: $color-text-white;
+    outline: none;
   }
 
   @include active {
     background-color: $color-text-base;
+  }
+
+  &:active {
+    background-color: $color-text-base;
+    color: $color-text-white;
   }
 }
 

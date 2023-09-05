@@ -28,7 +28,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
-  column-gap: 30px;
+  column-gap: 20px;
 
   @include vp-1199 {
     grid-template-columns: 55px 1fr 55px;
@@ -48,7 +48,7 @@
 
 .reviews__item {
   background-color: $color-bg-accent;
-  padding: 50px 55px 40px;
+  padding: 55px 60px 40px;
   width: 100%;
   margin: 0;
   display: grid;
@@ -56,6 +56,7 @@
   column-gap: 30px;
 
   @include vp-1199 {
+    padding-top: 60px;
     padding-left: 65px;
     padding-right: 65px;
   }
@@ -63,8 +64,8 @@
   @include vp-767 {
     grid-template-columns: 1fr 1fr;
     padding: 40px 30px 20px;
-    column-gap: 20px;
-    row-gap: 0;
+    column-gap: 13px;
+    row-gap: 5px;
   }
 }
 
@@ -81,6 +82,7 @@
   @include vp-767 {
     grid-column: 1 / 2;
     margin-top: 0;
+    margin-left: 15px;
     width: 68px;
     height: 68px;
     justify-self: end;
@@ -90,7 +92,7 @@
 .reviews cite {
   @include text-roboto-20-26-700;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   text-align: left;
   color: $color-text-white;
   font-style: normal;
@@ -126,10 +128,10 @@
   width: 56px;
   height: 56px;
   cursor: pointer;
+  border-radius: 50%;
 
   @include hover-focus {
     border: 1px solid $color-button-border-dark;
-    border-radius: 50%;
   }
 
   @include active {
@@ -137,15 +139,42 @@
     color: $color-text-white;
   }
 
+  &:active {
+    border: 1px solid $color-button-border-dark;
+    background-color: $color-button-border-dark;
+    color: $color-text-white;
+  }
+
   &--prev {
     grid-column: 1 / 2;
     justify-self: end;
-    margin-right: 20px;
+    margin-right: 5px;
+
+    @include vp-1199 {
+      margin-right: 20px;
+    }
+
+    @include vp-767 {
+      margin-right: 0;
+    }
   }
 
   &--next {
     grid-column: 3 / 4;
     justify-self: start;
-    margin-left: 20px;
+    margin-left: 5px;
+
+    @include vp-1199 {
+      margin-left: 20px;
+    }
+
+    @include vp-767 {
+      margin-left: 0;
+    }
   }
+
+}
+
+.reviews__arrow.swiper-button-disabled {
+  opacity: 0.3;
 }

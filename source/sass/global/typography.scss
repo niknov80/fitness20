@@ -54,7 +54,7 @@
   font-size: 54px;
   line-height: 85px;
   font-weight: 800;
-  letter-spacing: 1.62px;
+  letter-spacing: 2.2px;
 
   @include vp-1199 {
     font-size: 42px;
@@ -68,6 +68,22 @@
     letter-spacing: 0.96px;
     font-weight: 600;
   }
+}
+
+@mixin text-alumnisans-42-50-700 {
+  font-family: $ff-alumnisans;
+  font-size: 42px;
+  line-height: 50px;
+  font-weight: 700;
+  letter-spacing: 1.26px;
+}
+
+@mixin text-alumnisans-42-50-600 {
+  font-family: $ff-alumnisans;
+  font-size: 42px;
+  line-height: 50px;
+  font-weight: 600;
+  letter-spacing: 1.26px;
 }
 
 @mixin text-alumnisans-48-58-600 {
@@ -110,6 +126,14 @@
   }
 }
 
+@mixin text-alumnisans-32-38-600 {
+  font-family: $ff-alumnisans;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 600;
+  letter-spacing: 0.96px;
+}
+
 @mixin text-roboto-100-150-700 {
   font-size: 100px;
   line-height: 150px;
@@ -142,9 +166,9 @@
 }
 
 
-@mixin text-roboto-70-65-700 {
+@mixin text-roboto-70-55-700 {
   font-size: 70px;
-  line-height: 65px;
+  line-height: 55px;
   font-weight: 700;
 }
 
@@ -166,9 +190,9 @@
   font-weight: 700;
 }
 
-@mixin text-roboto-40-60-700 {
+@mixin text-roboto-40-50-700 {
   font-size: 40px;
-  line-height: 60px;
+  line-height: 50px;
   font-weight: 700;
 }
 
@@ -248,6 +272,12 @@
   }
 }
 
+@mixin text-roboto-18-27-700 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+}
+
 @mixin text-roboto-18-27-400 {
   font-size: 18px;
   line-height: 27px;
@@ -268,7 +298,7 @@
 
 @mixin text-roboto-18-22-400 {
   font-size: 18px;
-  line-height: 25px;
+  line-height: 22px;
   font-weight: 400;
 }
 
@@ -296,6 +326,12 @@
 @mixin text-roboto-16-22-300 {
   font-size: 16px;
   line-height: 22px;
+  font-weight: 300;
+}
+
+@mixin text-roboto-16-18-300 {
+  font-size: 16px;
+  line-height: 18px;
   font-weight: 300;
 }
 
