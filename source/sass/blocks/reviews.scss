@@ -46,13 +46,19 @@
   box-shadow: 0 0 40px $color-shadow-primary;
 }
 
+.reviews__slide {
+  height: auto;
+}
+
 .reviews__item {
   background-color: $color-bg-accent;
   padding: 55px 60px 40px;
   width: 100%;
+  height: 100%;
   margin: 0;
   display: grid;
   grid-template-columns: 80px 1fr;
+  grid-template-rows: min-content auto;
   column-gap: 30px;
 
   @include vp-1199 {
@@ -119,7 +125,6 @@
   }
 }
 
-
 .reviews__arrow {
   grid-row: 1 / 2;
   display: flex;
@@ -179,5 +184,6 @@
 }
 
 .reviews__arrow.swiper-button-disabled {
+  pointer-events: none;
   opacity: 0.3;
 }

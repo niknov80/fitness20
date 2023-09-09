@@ -4,6 +4,7 @@
   margin-top: 0;
   margin-bottom: 0;
   gap: 20px;
+  flex-wrap: wrap;
 
   @include vp-1199 {
     gap: 10px;
@@ -16,7 +17,10 @@
 
 .site-nav li {
   list-style-type: none;
-  width: 50%;
+
+  @include vp-767 {
+    width: 50%;
+  }
 }
 
 .site-nav a {

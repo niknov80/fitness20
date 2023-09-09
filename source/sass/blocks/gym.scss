@@ -124,7 +124,7 @@
 
   @include vp-767 {
     margin-bottom: 40px;
-    height: 313px;
+    height: auto;
     width: 100%;
   }
 }
@@ -137,7 +137,7 @@
 
 .gym__video {
   position: absolute;
-  bottom: 0;
+  top: 288px;
   left: 38%;
   width: 363px;
   height: 228px;
@@ -147,6 +147,8 @@
     transform: translateX(-50%);
     width: 266px;
     height: 167px;
+    bottom: 0;
+    top: unset;
   }
 
   @include vp-767 {
@@ -154,5 +156,6 @@
     left: auto;
     transform: none;
     width: 100%;
+    height: calc(100vw * 0.52);
   }
 }

@@ -94,6 +94,8 @@
 
 .contacts__wrapper dd {
   @include text-roboto-14-21-400;
+  display: flex;
+  flex-direction: column;
   margin-left: 0;
 
   @include vp-1199 {
@@ -108,5 +110,13 @@
   @include vp-1199 {
     @include text-roboto-20-30-700;
     margin-bottom: 5px;
+  }
+}
+
+.contacts__wrapper a {
+  word-spacing: 100vw;
+  margin-right: 1rem;
+  @include hover {
+    text-decoration: underline;
   }
 }

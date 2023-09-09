@@ -23,6 +23,9 @@
 .btn--light {
   color: $color-text-white;
   border: 4px solid $color-button-border-light;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @include hover-focus {
     background-color: $color-bg-primary;

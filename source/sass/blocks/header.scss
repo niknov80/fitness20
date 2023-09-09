@@ -6,13 +6,21 @@
 
 .header__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .header__logo {
   padding-top: 40px;
   padding-bottom: 30px;
+  margin-right: auto;
+  white-space: nowrap;
+
+  @include hover {
+    opacity: 0.6;
+  }
 
   @include vp-1199 {
     padding-top: 35px;
@@ -35,6 +43,14 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
+  @include hover {
+    opacity: 0.6;
+  }
+
+  @include active{
+    opacity: 0.3;
+  }
+
   @include vp-1199 {
     font-size: 24px;
     font-weight: 700;
@@ -52,4 +68,6 @@
     padding-top: 15px;
     padding-bottom: 15px;
   }
+
+
 }

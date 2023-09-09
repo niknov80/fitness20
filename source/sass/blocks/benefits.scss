@@ -55,6 +55,7 @@
   margin-bottom: 0;
   padding-left: 0;
   column-gap: 55px;
+  row-gap: 20px;
 
   @include vp-1199 {
     grid-template-columns: 1fr 1fr;
@@ -194,7 +195,8 @@
   margin-top: 0;
   margin-bottom: 8px;
   background-image: $color-text-gradient;
-  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   @include vp-1199 {
     @include text-roboto-58-45-700;
@@ -305,7 +307,8 @@
 .benefits__number--accent p {
   @include text-roboto-74-90-700;
   background-image: none;
-  background-clip: unset;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
 
 
   @include vp-1199 {

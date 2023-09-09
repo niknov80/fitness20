@@ -19,6 +19,7 @@
   gap: 45px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   align-self: center;
+  flex-wrap: wrap;
 
   @include vp-1199 {
     gap: 50px;
@@ -56,16 +57,24 @@
 }
 
 .tabs__element {
-  display: flex;
+  //display: grid;
+  //justify-content: space-between;
+  //gap: 10px;
+  //flex-wrap: wrap;
+  //align-items: center;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
-  gap: 10px;
-  align-items: center;
   width: 100%;
 
   @include vp-1199 {
-    flex-direction: column;
+    //flex-direction: column;
+    grid-template-columns: 1fr;
     row-gap: 40px;
   }
 
