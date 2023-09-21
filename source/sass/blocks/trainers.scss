@@ -9,7 +9,7 @@
 
   @include vp-767 {
     margin-top: 0;
-    padding-top: 5px;
+    padding-top: 3px;
     padding-bottom: 70px;
   }
 }
@@ -54,6 +54,7 @@
 
 .trainers__item {
   position: relative;
+  width: 100%;
 }
 
 .trainers__overlay {
@@ -75,7 +76,7 @@
     justify-content: start;
 
     @include vp-767 {
-      padding: 40px 35px 35px;
+      padding: 43px 35px 35px;
     }
 
     & h3 {
@@ -159,12 +160,16 @@
 }
 
 .trainers__img {
-  height: 294px;
-  width: 260px;
+  height: auto;
+  width: auto;
+  object-fit: cover;
+
+  @include vp-1199 {
+    aspect-ratio: 0.92;
+  }
 
   @include vp-767 {
-    width: 226px;
-    height: 274px;
+    aspect-ratio: 0.84;
   }
 }
 

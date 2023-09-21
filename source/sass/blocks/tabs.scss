@@ -9,7 +9,7 @@
   }
 
   @include vp-767 {
-    gap: 35px;
+    gap: 30px;
   }
 }
 
@@ -26,7 +26,7 @@
   }
 
   @include vp-767 {
-    gap: 40px;
+    gap: 38px;
   }
 }
 
@@ -57,13 +57,8 @@
 }
 
 .tabs__element {
-  //display: grid;
-  //justify-content: space-between;
-  //gap: 10px;
-  //flex-wrap: wrap;
-  //align-items: center;
   display: grid;
-  column-gap: 10px;
+  column-gap: 40px;
   row-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
@@ -73,7 +68,6 @@
   width: 100%;
 
   @include vp-1199 {
-    //flex-direction: column;
     grid-template-columns: 1fr;
     row-gap: 40px;
   }

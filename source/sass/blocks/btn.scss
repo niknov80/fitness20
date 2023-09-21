@@ -69,6 +69,10 @@
 .btn--tab {
   text-transform: lowercase;
   padding-bottom: 10px;
+
+  @include vp-767 {
+    padding-bottom: 14px;
+  }
 }
 
 .btn--faq {

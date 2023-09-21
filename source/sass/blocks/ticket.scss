@@ -1,6 +1,27 @@
 .ticket {
   position: relative;
   background-color: $color-bg-secondary;
+}
+
+.ticket__wrapper {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 65px;
+    padding-bottom: 75px;
+  }
 
   &::after {
     content: "";
@@ -9,7 +30,6 @@
     right: -110px;
     width: 322px;
     height: 385px;
-    //background-color: $color-bg-banner;
     background-image: url("../img/weight-plates-desktop.png");
     transform: rotate(-30deg);
 
@@ -34,26 +54,6 @@
     @include vp-767 {
       display: none;
     }
-  }
-}
-
-.ticket__wrapper {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  display: flex;
-  flex-direction: column;
-  max-width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @include vp-1199 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  @include vp-767 {
-    padding-top: 65px;
-    padding-bottom: 75px;
   }
 }
 

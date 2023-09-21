@@ -38,7 +38,7 @@
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 25px 25px 15px;
+  padding: 25px 28px 15px;
   min-height: 211px;
 
   border: 7px solid;
@@ -46,7 +46,8 @@
   border-image-slice: 1;
 
   @include vp-1199 {
-    padding: 25px 25px 20px;
+    padding: 22px 27px 16px;
+    min-height: 210px;
   }
 
   @include vp-767 {
@@ -70,7 +71,7 @@
 .promo__item h3 {
   @include text-roboto-26-28-700;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .promo__item p {
@@ -95,7 +96,7 @@
   align-self: start;
   margin-top: auto;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 13px;
 
   @include vp-767 {
     align-self: center;
@@ -159,12 +160,13 @@
   background-color: $color-bg-banner;
   color: $color-text-white;
 
-  padding: 44px 44px 35px;
+  padding: 42px 44px 35px;
 
   @include vp-767 {
     width: 100%;
     align-items: center;
-    padding-bottom: 30px;
+    padding-top: 45px;
+    padding-bottom: 34px;
   }
 }
 
@@ -191,6 +193,7 @@
 
   @include vp-767 {
     text-align: center;
+    margin-bottom: 15px;
   }
 }
 
@@ -218,7 +221,7 @@
   position: relative;
   grid-column: 1 / 2;
   margin-top: auto;
-  padding-top: 10px;
+  padding-top: 12px;
   padding-bottom: 10px;
 
 

@@ -20,7 +20,7 @@
   grid-column: 1 / 2;
 
   @include vp-1199 {
-    padding: 62px 0 61px;
+    padding: 62px 0 64px;
     grid-column: 2 / 3;
     justify-self: stretch;
   }

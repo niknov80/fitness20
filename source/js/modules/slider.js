@@ -26,6 +26,7 @@ export const sliderInit = () => {
   const reviweSlider = new Swiper('.reviews__slider', {
     direction: 'horizontal',
     loop: false,
+    autoHeight: true,
     slidesPerView: 1,
     slidesPerGroup: 1,
 

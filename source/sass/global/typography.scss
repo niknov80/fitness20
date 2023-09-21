@@ -166,9 +166,9 @@
 }
 
 
-@mixin text-roboto-70-55-700 {
+@mixin text-roboto-70-60-700 {
   font-size: 70px;
-  line-height: 55px;
+  line-height: 60px;
   font-weight: 700;
 }
 
@@ -326,12 +326,6 @@
 @mixin text-roboto-16-22-300 {
   font-size: 16px;
   line-height: 22px;
-  font-weight: 300;
-}
-
-@mixin text-roboto-16-18-300 {
-  font-size: 16px;
-  line-height: 18px;
   font-weight: 300;
 }
 
