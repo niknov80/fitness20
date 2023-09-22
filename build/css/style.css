@@ -5110,6 +5110,7 @@ button,
   }
 
   .promo__item--first {
+    padding: 0;
     -ms-grid-columns: 41% 59%;
     grid-template-columns: 41% 59%;
     -ms-grid-column: 1;
