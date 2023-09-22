@@ -27,6 +27,7 @@
 
   @include vp-767 {
     margin-top: 0;
+    margin-bottom: 50px;
   }
 }
 
@@ -216,7 +217,14 @@
   }
 
   @include vp-767 {
-    margin-bottom: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+}
+
+.benefits__item--top p {
+  @include vp-767 {
+    margin-top: 0;
   }
 }
 
@@ -229,7 +237,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 0;
+    margin-bottom: 5px;
   }
 }
 
@@ -242,7 +250,7 @@
   }
 
   @include vp-767 {
-    margin-top: 3px;
+    margin-top: 0;
   }
 }
 
@@ -319,7 +327,6 @@
   -webkit-background-clip: unset;
   -webkit-text-fill-color: unset;
 
-
   @include vp-1199 {
     @include text-roboto-74-85-700;
   }
@@ -346,10 +353,29 @@
   @include vp-1199 {
     margin-bottom: 3px;
   }
+
+  @include vp-767 {
+    margin-bottom: 1px;
+  }
+}
+
+.benefits__item--top .benefits__value {
+  @include vp-767 {
+    gap: 1px;
+    margin-bottom: 7px;
+  }
+}
+
+.benefits__item--bottom .benefits__number {
+  @include vp-767 {
+    margin-bottom: 1px;
+  }
 }
 
 .benefits__item--bottom .benefits__value {
   @include vp-767 {
-    margin-bottom: 8px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    gap: 2px;
   }
 }

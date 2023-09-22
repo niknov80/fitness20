@@ -3,27 +3,22 @@
   padding-bottom: 55px;
 
   @include vp-1199 {
-    padding-top: 100px;
+    padding-top: 98px;
     padding-bottom: 60px;
   }
 
   @include vp-767 {
-    padding-top: 65px;
+    padding-top: 62px;
   }
 }
 
 .events__wrapper {
   background-color: $color-bg-banner;
   display: grid;
-  grid-template-columns: 1fr 660px;
+  grid-template-columns: 1fr auto;
   max-width: 1160px;
   margin-left: auto;
   margin-right: auto;
-
-  @include vp-1199 {
-    grid-template-columns: 1fr 386px;
-    max-width: 678px;
-  }
 
   @include vp-767 {
     max-width: 290px;
@@ -33,7 +28,7 @@
 
 .events__description {
   box-sizing: border-box;
-  padding: 85px 15px 85px;
+  padding: 80px 5px 85px;
   display: grid;
   grid-template-columns: 1fr 96px;
   column-gap: 5px;
@@ -57,7 +52,7 @@
 .events__description h3 {
   @include text-alumnisans-82-78-600;
   color: $color-text-white;
-  margin-top: 0;
+  margin-top: 5px;
   margin-bottom: 0;
   padding-left: 15px;
 
@@ -95,12 +90,13 @@
   display: flex;
   gap: 7px;
   padding: 0 5px 0 0;
-  margin: 0 0 15px;
+  margin: 5px 0 15px;
   width: min-content;
   border-top: 1px solid $color-text-white;
 
   @include vp-1199 {
     @include text-roboto-10-15-400;
+    margin-top: 2px;
     margin-bottom: 0;
     gap: 4px;
   }

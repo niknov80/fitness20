@@ -21,7 +21,7 @@
   padding-right: 170px;
 
   @include vp-1199 {
-    padding-top: 60px;
+    padding-top: 63px;
     padding-bottom: 70px;
     padding-right: 25px;
     grid-column: 2 / 3;
@@ -29,7 +29,7 @@
   }
 
   @include vp-767 {
-    padding: 65px 15px 70px;
+    padding: 65px 15px 67px;
     grid-column: 1 / 2;
   }
 }
@@ -50,12 +50,12 @@
 
   @include vp-1199 {
     @include text-alumnisans-42-50-700;
-    margin-bottom: 23px;
+    margin-bottom: 27px;
   }
 
   @include vp-767 {
     @include text-alumnisans-32-38-600;
-    margin-bottom: 18px;
+    margin-bottom: 30px;
   }
 }
 
@@ -72,7 +72,7 @@
   @include vp-767 {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 23px;
   }
 }
 
@@ -87,21 +87,37 @@
   padding-bottom: 6px;
   border-bottom: 1px solid $color-input-border-50;
 
-  //&:focus {
-  //  padding-left: 10px;
-  //  padding-right: 10px;
-  //  padding-top: 9px;
-  //  outline: none;
-  //}
+  &:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
 
-  &:focus::-webkit-input-placeholder, {color: transparent}
-  &:focus::-moz-placeholder,          {color: transparent}
-  &:focus:-moz-placeholder,           {color: transparent}
-  &:focus:-ms-input-placeholder {color: transparent}
-  &:active::-webkit-input-placeholder, {color: transparent}
-  &:active::-moz-placeholder,          {color: transparent}
-  &:active:-moz-placeholder,           {color: transparent}
-  &:active:-ms-input-placeholder {color: transparent}
+  &:focus::-moz-placeholder {
+    color: transparent;
+  }
+
+  &:focus:-moz-placeholder {
+    color: transparent;
+  }
+
+  &:focus:-ms-input-placeholder {
+    color: transparent;
+  }
+
+  &:active::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  &:active::-moz-placeholder {
+    color: transparent;
+  }
+
+  &:active:-moz-placeholder {
+    color: transparent;
+  }
+
+  &:active:-ms-input-placeholder {
+    color: transparent;
+  }
 
   &:hover {
     border-bottom: 1px solid $color-input-border-100;
@@ -127,15 +143,15 @@
   }
 
   &:disabled:hover {
-    border-bottom: 1px solid rgba(255,255,255,0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   }
 
   &:disabled:active {
     border: none;
-    border-bottom: 1px solid rgba(255,255,255,.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding-left: 2px;
     padding-top: 8px;
-    
+
     &::-webkit-input-placeholder {
       color: $color-text-white;
     }

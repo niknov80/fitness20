@@ -27,7 +27,7 @@
     content: "";
     position: absolute;
     bottom: -95px;
-    right: -110px;
+    right: -212px;
     width: 322px;
     height: 385px;
     background-image: url("../img/weight-plates-desktop.png");
@@ -40,7 +40,7 @@
 
     @include vp-1199 {
       bottom: -73px;
-      right: -10px;
+      right: -55px;
       width: 290px;
       height: 345px;
       background-image: url("../img/weight-plates-tablet.png");

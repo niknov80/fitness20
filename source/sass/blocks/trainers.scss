@@ -216,12 +216,12 @@
   color: #afafaf;
   border-radius: 50%;
 
-  &:hover{
+  &:hover {
     border: 1px solid $color-text-accent;
     color: $color-text-accent;
   }
 
-  &:focus{
+  &:focus {
     border: 1px solid $color-text-accent;
     color: $color-text-accent;
     outline: none;
