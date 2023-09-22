@@ -161,6 +161,8 @@
     grid-column: 1 / 2;
     display: flex;
     flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -175,7 +177,7 @@
   @include vp-767 {
     width: 100%;
     align-items: center;
-    padding-top: 45px;
+    padding-top: 42px;
     padding-bottom: 34px;
   }
 }
