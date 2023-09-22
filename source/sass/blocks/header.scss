@@ -18,8 +18,16 @@
   margin-right: auto;
   white-space: nowrap;
 
-  @include hover {
+  &:hover {
     opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @include vp-1199 {
@@ -43,11 +51,15 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
-  @include hover {
+  &:hover {
     opacity: 0.6;
   }
 
-  @include active{
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active{
     opacity: 0.3;
   }
 

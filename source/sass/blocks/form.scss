@@ -46,7 +46,7 @@
   @include text-alumnisans-54-85-800;
   color: $color-text-white;
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 
   @include vp-1199 {
     @include text-alumnisans-42-50-700;
@@ -83,36 +83,62 @@
   background-color: transparent;
   box-shadow: none;
   border: none;
-  padding-top: 15px;
-  padding-bottom: 5px;
+  padding-top: 8px;
+  padding-bottom: 6px;
   border-bottom: 1px solid $color-input-border-50;
 
-  &:focus {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 9px;
-    outline: none;
-  }
+  //&:focus {
+  //  padding-left: 10px;
+  //  padding-right: 10px;
+  //  padding-top: 9px;
+  //  outline: none;
+  //}
 
   &:focus::-webkit-input-placeholder, {color: transparent}
   &:focus::-moz-placeholder,          {color: transparent}
   &:focus:-moz-placeholder,           {color: transparent}
   &:focus:-ms-input-placeholder {color: transparent}
+  &:active::-webkit-input-placeholder, {color: transparent}
+  &:active::-moz-placeholder,          {color: transparent}
+  &:active:-moz-placeholder,           {color: transparent}
+  &:active:-ms-input-placeholder {color: transparent}
 
-  @include hover {
+  &:hover {
     border-bottom: 1px solid $color-input-border-100;
   }
 
-  @include focus {
+  &:focus {
+    outline: none;
+    padding-top: 7px;
+    padding-left: 12px;
+    border: 1px solid $color-input-border-100;
+  }
+
+  &:active {
+    outline: none;
+    padding-top: 7px;
+    padding-left: 12px;
     border: 1px solid $color-input-border-100;
   }
 
   &:disabled {
+    pointer-events: none;
     opacity: 0.4;
   }
 
   &:disabled:hover {
     border-bottom: 1px solid rgba(255,255,255,0.4);
+  }
+
+  &:disabled:active {
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    padding-left: 2px;
+    padding-top: 8px;
+    
+    &::-webkit-input-placeholder {
+      color: $color-text-white;
+    }
   }
 
   @include vp-767 {
@@ -126,6 +152,7 @@
 }
 
 .form__wrapper .is-invalid input {
+  border: none;
   border-bottom: 1px solid $color-form-error;
 }
 

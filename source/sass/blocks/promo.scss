@@ -102,23 +102,32 @@
     align-self: center;
   }
 
-  @include hover {
+  &:hover {
     opacity: 0.7;
   }
 
-  @include focus {
+  &:focus {
     padding: 10px;
-    margin-left: -10px;
-    outline: 1px solid $color-button-border-dark;
+    margin-left: -11px;
+    margin-bottom: 2px;
+    border: 1px solid $color-button-border-dark;
+    outline: none;
 
-    &::after {
-      display: none;
+    &:after {
+      border-bottom: none;
     }
   }
 
-  @include active {
+  &:active {
+    border: none;
+    margin-bottom: 3px;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    opacity: 1;
+
     &::after {
-      display: block;
+      border-bottom: 1px solid $color-button-border-dark;
     }
   }
 
@@ -221,7 +230,7 @@
   position: relative;
   grid-column: 1 / 2;
   margin-top: auto;
-  padding-top: 12px;
+  padding-top: 10px;
   padding-bottom: 10px;
 
 
@@ -229,23 +238,32 @@
     align-self: center;
   }
 
-  @include hover {
+  &:hover {
     opacity: 0.8;
   }
 
-  @include focus {
+  &:focus {
     padding: 10px;
-    margin-left: -10px;
-    outline: 1px solid $color-button-border-light;
+    margin-left: -11px;
+    margin-bottom: -1px;
+    border: 1px solid $color-button-border-light;
+    outline: none;
 
     &::after {
-      display: none;
+      height: 0;
     }
   }
 
-  @include active {
+  &:active {
+    border: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    opacity: 1;
+
     &::after {
-      display: block;
+      border-color: $color-button-border-light;
     }
   }
 

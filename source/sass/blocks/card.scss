@@ -17,7 +17,7 @@
     width: 290px;
   }
 
-  @include hover-focus {
+  &:hover {
     &::after {
       content: "";
       position: absolute;
@@ -41,7 +41,30 @@
     }
   }
 
+  &:focus-within {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: block;
+      border: 7px solid;
+      border-image-source: $color-button-bg-gradient;
+      border-image-slice: 1;
+      cursor: pointer;
+    }
 
+    & .btn--dark {
+      background: $color-button-bg-gradient;
+      border: none;
+      margin-bottom: 2px;
+      margin-top: 2px;
+      color: $color-text-white;
+      outline: none;
+    }
+  }
 
   &::before {
     @include text-roboto-100-150-700;
@@ -81,6 +104,7 @@
   margin-top: 0;
   margin-bottom: 38px;
   z-index: 1;
+  color: $color-text-accent;
 
   @include vp-1199 {
     margin-bottom: 35px;

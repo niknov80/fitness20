@@ -53,19 +53,19 @@
     width: calc(100% - 20px);
   }
 
-  @include hover {
+  &:hover {
     &::after {
       border-bottom: 1px solid $color-button-border-light;
     }
   }
 
-  @include focus {
+  &:focus {
     &::before {
       border: 1px solid $color-button-border-light;
     }
   }
 
-  @include active {
+  &:active {
     &::before,
     &::after {
       border: none;

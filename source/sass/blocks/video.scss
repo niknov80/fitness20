@@ -46,11 +46,16 @@
     height: 72px;
   }
 
-  @include hover-focus {
+  &:hover {
     background-image: url("../img/svg/play-hover.svg");
   }
 
-  @include active {
+  &:focus {
+    background-image: url("../img/svg/play-hover.svg");
+    outline: none;
+  }
+
+  &:active {
     background-image: url("../img/svg/play-hover.svg");
   }
 

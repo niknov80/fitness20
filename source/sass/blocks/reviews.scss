@@ -139,13 +139,13 @@
   cursor: pointer;
   border-radius: 50%;
 
-  @include hover-focus {
+  &:hover {
     border: 1px solid $color-button-border-dark;
   }
 
-  @include active {
-    background-color: $color-button-border-dark;
-    color: $color-text-white;
+  &:focus {
+    outline: none;
+    border: 1px solid $color-button-border-dark;
   }
 
   &:active {

@@ -16,14 +16,16 @@
   width: 25px;
   height: 25px;
 
-  @include hover-focus {
+  &:hover {
     background-color: $color-text-accent;
     color: $color-text-white;
     outline: none;
   }
 
-  @include active {
-    background-color: $color-text-base;
+  &:focus {
+    background-color: $color-text-accent;
+    color: $color-text-white;
+    outline: none;
   }
 
   &:active {

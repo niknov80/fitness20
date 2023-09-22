@@ -40,15 +40,25 @@
   border: none;
   color: rgba(16, 38, 84, 0.5);
 
-  @include hover-focus {
+  &:hover {
     color: $color-text-base;
     box-shadow: 0 2px 0 0 #ed0233;
+  }
+
+  &:focus {
+    color: $color-text-base;
+    box-shadow: 0 2px 0 0 #ed0233;
+    outline: none;
   }
 
   &.is-active {
     content: "";
     color: $color-text-base;
     box-shadow: 0 2px 0 0 #ed0233;
+  }
+
+  &:disabled {
+    box-shadow: none;
   }
 }
 
