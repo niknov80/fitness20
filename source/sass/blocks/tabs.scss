@@ -42,19 +42,19 @@
 
   &:hover {
     color: $color-text-base;
-    box-shadow: 0 2px 0 0 #ed0233;
+    box-shadow: 0 3px 0 -1px #ed0233;
   }
 
   &:focus {
     color: $color-text-base;
-    box-shadow: 0 2px 0 0 #ed0233;
+    box-shadow: 0 3px 0 -1px #ed0233;
     outline: none;
   }
 
   &.is-active {
     content: "";
     color: $color-text-base;
-    box-shadow: 0 2px 0 0 #ed0233;
+    box-shadow: 0 0 3px 0 -1px #ed0233;
   }
 
   &:disabled {

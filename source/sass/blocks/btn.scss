@@ -94,19 +94,20 @@
   }
 
   &:hover {
-    background: $color-button-bg-gradient;
-    border: none;
-    color: $color-text-white;
+    outline: 1px solid $color-button-border-dark;
   }
 
   &:focus {
-    background: $color-button-bg-gradient;
-    border: none;
-    color: $color-text-white;
+    outline: 1px solid $color-button-border-dark;
+  }
+
+  &:focus:not(.focus-visible) {
+    outline: 1px solid $color-button-border-dark;
   }
 
   &:active {
-    color: $color-text-white-70;
+    background: $color-button-bg-gradient;
+    color: $color-text-white;
   }
 
   &:disabled {
