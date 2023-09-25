@@ -117,7 +117,22 @@
 
 .btn--faq.is-active {
   background: $color-button-bg-gradient;
-  color: $color-text-white;
+  color: $color-text-white-70;
+  outline: none;
+}
+
+.btn--faq.is-active {
+  &:hover {
+    color: $color-text-white;
+    outline: none;
+    border: none;
+  }
+
+  &:focus {
+    color: $color-text-white;
+    outline: none;
+    border: none;
+  }
 }
 
 .btn--accordion {
